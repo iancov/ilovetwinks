@@ -25,66 +25,226 @@ img {
 
 .p1 {
     font-family:AppleGaramondLight;
-    font-size: 20px;
+    font-size: 24px;
     color: black;
 }
 
 .p2 {
     font-family:AppleGaramondLightItalic;
-    font-size: 150px;
+    font-size: 26px;
     color: black;
 }
 
 .p3 {
-    font-family:HelveticaMedium;
-    font-size: 16px;
+    font-family:AppleGaramondLight;
+    font-size: 26px;
     color: black;
+}
+
+.p4 {
+    font-family:AppleGaramondLight;
+    font-size: 26px;
+    color: white;
+}
+
+.greenhover:hover {
+    animation: flash;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
 .main {
     /* background: lightblue; */
+
     height: 100vh;
     width: 100%;
+
     display: flex;
     flex-direction: row;
 }
 
 .toppanel {
+    background: white;
+    border-bottom: solid 1px black;
+
     width: 100%;
     height: 45px;
     position: fixed;
     top: 0px;
-    background: white;
-    border-bottom: solid 1px black;
-    z-index: 2;
 
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .logo {
+    background: white;
+    border-right: solid black 1px;
+    
     width: auto;
     height: 100%;
-    /* background: yellow; */
-    /* border-right: solid 1px black; */
     padding: 5px;
+    padding-right: 7.5px;
+    margin-right: 5px;
+
+    z-index: 1;
+}
+
+.marquee1 {
+    /* background: yellow; */
+    position: absolute;
+
+    animation: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    z-index: 0;
+}
+
+.marquee1shirt {
+        /* background: yellow; */
+        position: absolute;
+
+        animation: marquee;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-delay: -8.75s;
+
+        z-index: 0;
+}
+
+.marquee2 {
+    /* background: yellow; */
+    position: absolute;
+
+    animation: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -7.5s;
+
+    z-index: 0;
+}
+
+.marquee2shirt {
+    /* background: yellow; */
+    position: absolute;
+
+    animation: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -6.25s;
+
+    z-index: 0;
+}
+
+.marquee3 {
+    /* background: yellow; */
+    position: absolute;
+
+    animation: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -5s;
+
+    z-index: 0;
+}
+
+.marquee3shirt {
+    /* background: yellow; */
+    position: absolute;
+
+    animation: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -3.75s;
+
+    z-index: 0;
+}
+
+.marquee4 {
+    /* background: yellow; */
+    position: absolute;
+
+    animation: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -2.5s;
+
+    z-index: 0;
+}
+
+.marquee4shirt {
+    /* background: yellow; */
+    position: absolute;
+
+    animation: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -1.25s;
+
+    z-index: 0;
 }
 
 .leftpanel {
+    background: white;
+    border-right: solid 1px black;    
+    
     width: 325px;
     height: 100vh;
-
-    background: white;
-    border-right: solid 1px black;
+    padding: 5px;
+    padding-top: 55px;
 
     display: flex;
-    padding: 10px;
-    padding-top: 45px;
-    flex-direction: column-reverse;
+    flex-direction: column;
+}
+
+.question {
+    /* background: lightseagreen;
+    border: solid 1px black; */
+    padding: 12.5px;
+}
+
+.whatisthiscontainer {
+    /* background: red;
+    border: solid black 1px; */
+    
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.whatisthis {
+    background: black;
+    border: solid 1px black;
+
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 20px;
+    padding-bottom: 2px;
+}
+
+.whatisthis:hover {
+    rotate: -20deg;
+    cursor: pointer;
 }
 
 .rightpanel {
-    /* background: blue; */
+    /* background: lightgoldenrodyellow; */
+
     height: 100vh;
     width: calc(100% - 325px);
     padding-top: 45px;
@@ -94,36 +254,20 @@ img {
     justify-content: center;
 }
 
-.buttonbox {
-    width: 100%;
-    height: 40px;
-
-    /* position: fixed;
-    bottom: 10px;
-    left: 10px; */
-    /* background: lightgoldenrodyellow; */
-    /* border: solid 1px black; */
-
-    /* z-index: 1.5; */
-
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
+@keyframes flash {
+    0% {
+        color: black;
+    }
+    100% {
+        color: rgb(2, 181, 2);
+    }
 }
 
-.button {
-    width: calc(25% - 7.5px);
-    /* background: lightpink; */
-    height: 100%;
-    border: solid 1px black;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.button:hover {
-    background: rgb(240, 240, 240);
-    cursor: pointer;
+@keyframes marquee {
+    0% {
+        right: -5%;
+    }
+    100% {
+        right: 100%;
+    }
 }

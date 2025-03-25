@@ -7,47 +7,163 @@
     <title>Twink ’25</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="png" href="TwinkGifFavicon.gif">
+    <link rel="icon" type="png" href="TGifSmall.gif">
 
 </head>
 
 <body>
 
-    <div class="main">        
-        
-        <div class="toppanel">
-        
-            <div class="logo">
-                <img src="TwinkGif.gif">
-            </div>
-
+    <div class="toppanel">
+    
+        <div class="logo">
+            <img src="TGif.gif">
         </div>
 
+        <div class="marquee1">
+            <p class="p3">Twink</p>
+        </div>
+
+        <div class="marquee1shirt">
+            <p class="p2">Shirt</p>
+        </div>
+
+        <div class="marquee2">
+            <p class="p3">Twink</p>
+        </div>
+
+        <div class="marquee2shirt">
+            <p class="p2">Shirt</p>
+        </div>
+
+        <div class="marquee3">
+            <p class="p3">Twink</p>
+        </div>
+
+        <div class="marquee3shirt">
+            <p class="p2">Shirt</p>
+        </div>
+
+        <div class="marquee4">
+            <p class="p3">Twink</p>
+        </div>
+
+        <div class="marquee4shirt">
+            <p class="p2">Shirt</p>
+        </div>
+
+    </div>
+
+    <div class="main">        
 
         <div class="leftpanel">
+            
+            <form id="myForm" >
 
-            <div class="buttonbox">
+                <div class="question">
 
-                <div class="button"><p class=p1>shirt</p></div>
+                    <label for="name"><span class="p1">Name</span></label>
+                    <input type="text" id="name" name="name" required>
 
-                <div class="button"><p class=p1>twink</p></div>
+                </div>
 
-                <div class="button"><p class=p1>about</p></div>
+                <div class="question">
 
-                <div class="button"><p class=p1>gram</p></div>
+                    <label for="email"><span class="p1">Email  </span></label>
+                    <input type="email" id="email" name="email" required>
 
+                </div>
+
+                <div class="question">
+
+                    <label for="size"><span class="p1">Size</span></label>
+                    
+                    <br>
+                    <input type="radio" id="small" name="size" required>
+                    <label for="small"><span class="p1">Small</span></label>
+                    
+                    <br>
+                    <input type="radio" id="medium" name="size" required>
+                    <label for="medium"><span class="p1">Medium</span></label>                    
+                    
+                    <br>
+                    <input type="radio" id="large" name="size" required>
+                    <label for="large"><span class="p1">Large</span></label>
+
+                    <br>
+                    <input type="radio" id="xlarge" name="size" required>
+                    <label for="xlarge"><span class="p1">X-Large</span></label>
+
+                </div>
+
+                <div class="question">
+
+                    <label for="design"><span class="p1">Design</span></label>
+                    
+                    <br>
+                    <input type="radio" id="twink" name="design" required>
+                    <label for="twink"><span class="p1">Twink</span></label>
+                    
+                    <br>
+                    <input type="radio" id="twinkfortwink" name="design" required>
+                    <label for="twinkfortwink"><span class="p1">Twink 4 Twink</span></label>                    
+                    
+                    <br>
+                    <input type="radio" id="virgintwink" name="design" required>
+                    <label for="virgintwink"><span class="p1">Virgin Twink</span></label>
+
+                    <br>
+                    <input type="radio" id="muscletwink" name="design" required>
+                    <label for="muscletwink"><span class="p1">Muscle Twink</span></label>
+
+                    <br>
+                    <input type="radio" id="digitaltwink" name="design" required>
+                    <label for="digitaltwink"><span class="p1">Digital Twink</span></label>
+
+                </div>
+
+                <div class="question">
+
+                    <input type="checkbox" id="pickup" name="pickup" required>
+                    <label for="pickup"><span class="p1">I will pick up my shirt in RVA</span></label>
+
+                </div>
+
+                <div class="question">
+
+                    <input type="checkbox" id="venmo" name="venmo" required>
+                    <label for="venmo"><span class="p1 greenhover">I will venmo @iancovert $10</span></label>
+
+                </div>
+
+                <div class="question">
+
+                    <input type="submit" value="Place Order" class="p1">
+
+                </div>
+
+                <div class="question">
+
+                    <input type="reset" value="Reset" class="p1">
+
+                </div>
+
+            </form>
+
+            <div class="whatisthiscontainer">
+                <div class="whatisthis">
+                    <p class="p4">?</p>
+                </div>
             </div>
 
         </div>
 
         <div class="rightpanel">
-
             <img src="shirtplaceholder.png">
-
         </div>
 
-
     </div>
+
+<script src="main.js"></script>
 
 </body>
 
