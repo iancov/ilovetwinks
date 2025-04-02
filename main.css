@@ -202,6 +202,10 @@ body {
     justify-content: center;
 }
 
+.draggable:hover {
+    cursor: pointer;
+}
+
 .research {
     background: white;
     border-right: solid black 1px;
