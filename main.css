@@ -1,273 +1,338 @@
+img {
+    max-width:100%;
+}
+
 * {
     box-sizing: border-box;
+    padding: 0;
     margin: 0;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+body {
+    background-image: url(CMBYN_Glasses.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow-y: hidden;
 }
 
 @font-face {
-    font-family:AppleGaramondLight;
-    src: url(AppleGaramondLight.ttf);
-    }
+    font-family: AppleGaramondLight;
+    src: url(AppleGaramondLight.ttf)
+}
 
 @font-face {
-    font-family:AppleGaramondLightItalic;
-    src: url(AppleGaramondLightItalic.ttf);
-    }
+    font-family: Arial;
+    src: url(Arial.TTF)
+}
 
 @font-face {
-    font-family:HelveticaMedium;
-    src: url(HelveticaNeueRoman.otf);
-    }
+    font-family: ArialItalic;
+    src: url(ArialItalic.TTF)
+}
 
 .p1 {
-    font-family:AppleGaramondLight;
-    font-size: 24px;
+    font-family: AppleGaramondLight;
     color: black;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .p2 {
-    font-family:AppleGaramondLightItalic;
-    font-size: 26px;
+    font-family: Arial;
     color: black;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.25rem;
 }
 
 .p3 {
-    font-family:AppleGaramondLight;
-    font-size: 26px;
+    font-family: ArialItalic;
     color: black;
+    font-size: 16px;
+    text-align: center;
+    display: block;
 }
 
 .p4 {
-    font-family:AppleGaramondLight;
-    font-size: 26px;
-    color: white;
-}
-
-.greenhover:hover {
-    animation: flash;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+    font-family: AppleGaramondLight;
+    color: black;
+    font-size: 80px;
 }
 
 .main {
-    /* background: lightblue; */
+    background-image: url(CMBYN_Pool.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    /* background: yellow; */
     height: 100vh;
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-}
-
-.toppanel {
-    background: white;
-    border-bottom: solid 1px black;
-
-    width: 100%;
-    height: 45px;
-    position: fixed;
-    top: 0px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.logo {
-    background: white;
-    border-right: solid black 1px;
     
-    width: auto;
-    height: 100%;
-    padding: 5px;
-    padding-right: 7.5px;
-    margin-right: 5px;
-
-    z-index: 1;
-}
-
-.marquee1 {
-    /* background: yellow; */
-    position: absolute;
-
-    animation: marquee;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-    z-index: 0;
-}
-
-.marquee1shirt {
-        /* background: yellow; */
-        position: absolute;
-
-        animation: marquee;
-        animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-delay: -8.75s;
-
-        z-index: 0;
-}
-
-.marquee2 {
-    /* background: yellow; */
-    position: absolute;
-
-    animation: marquee;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: -7.5s;
-
-    z-index: 0;
-}
-
-.marquee2shirt {
-    /* background: yellow; */
-    position: absolute;
-
-    animation: marquee;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: -6.25s;
-
-    z-index: 0;
-}
-
-.marquee3 {
-    /* background: yellow; */
-    position: absolute;
-
-    animation: marquee;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: -5s;
-
-    z-index: 0;
-}
-
-.marquee3shirt {
-    /* background: yellow; */
-    position: absolute;
-
-    animation: marquee;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: -3.75s;
-
-    z-index: 0;
-}
-
-.marquee4 {
-    /* background: yellow; */
-    position: absolute;
-
-    animation: marquee;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: -2.5s;
-
-    z-index: 0;
-}
-
-.marquee4shirt {
-    /* background: yellow; */
-    position: absolute;
-
-    animation: marquee;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: -1.25s;
-
-    z-index: 0;
-}
-
-.leftpanel {
-    background: white;
-    border-right: solid 1px black;    
-    
-    width: 325px;
-    height: 100vh;
-    padding: 5px;
-    padding-top: 55px;
 
     display: flex;
     flex-direction: column;
 }
 
-.question {
-    /* background: lightseagreen;
-    border: solid 1px black; */
-    padding: 12.5px;
+.top {
+    background: white;
+    height: 40px;
+
+    border-bottom: 1px solid black;
 }
 
-.whatisthiscontainer {
-    /* background: red;
-    border: solid black 1px; */
-    
-    display: flex;
-    flex-direction: row-reverse;
+.top:hover {
+    background: rgb(230, 230, 230);
 }
 
-.whatisthis {
-    background: black;
-    border: solid 1px black;
-
-    width: 25px;
-    height: 25px;
+.marqueeitem1 {
+    position: fixed;
+    right: 0;
+    /* background: yellow; */
+    min-width: 475px;
+    height: 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-right: 20px;
-    padding-bottom: 2px;
+    animation: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-.whatisthis:hover {
-    rotate: -20deg;
-    cursor: pointer;
-}
-
-.rightpanel {
-    /* background: lightgoldenrodyellow; */
-
-    height: 100vh;
-    width: calc(100% - 325px);
-    padding-top: 45px;
+.marqueeitem2 {
+    position: fixed;
+    right: 0;
+    /* background: yellow; */
+    min-width: 475px;
+    height: 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    animation: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -3.3s;
 }
 
-@keyframes flash {
-    0% {
-        color: black;
-    }
-    100% {
-        color: rgb(2, 181, 2);
-    }
+.marqueeitem3 {
+    position: fixed;
+    right: 0;
+    /* background: yellow; */
+    min-width: 475px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -6.6s;
 }
 
 @keyframes marquee {
     0% {
-        right: -5%;
+        right: -25%;
     }
     100% {
         right: 100%;
     }
+}
+
+.bottom {
+    /* background: lightpink; */
+    height: calc(100vh - 40px);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.leftpanel {
+    background: white;
+    width: 320px;
+
+    border-right: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.drawer {
+    /* background: plum; */
+    height: 40px;
+    border-top: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+    user-select: none;
+}
+
+.drawerhover:hover {
+    background: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+.rightpanel {
+    /* background: lightseagreen; */
+    width: calc(100% - 320px);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.shirtcontainer {
+    /* background: blue; */
+    width: 700px;
+    height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research {
+    background: white;
+    border-right: solid black 1px;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    position: relative;
+    overflow-y: scroll;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about {
+    background: white;
+    border-right: solid black 1px;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    position: relative;
+    overflow-y: scroll;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.xout {
+    width: 25px;
+    height: 25px;
+    background: white;
+    border: 1px solid black;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 3px;
+    user-select: none;
+}
+
+.xout:hover {
+    cursor: pointer;
+}
+
+.mobilegif {
+    display: none;
+}
+
+.mobiletitle {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+
+.marqueeitem2 {
+    animation-delay: -5s;
+}
+
+.marqueeitem3 {
+    visibility: hidden;
+}
+
+}
+
+@media screen and (max-width:700px) {
+
+.top {
+    display: none;
+}
+
+.bottom {
+    height: 100vh;
+    flex-direction: column;
+}
+
+.rightpanel {
+    display: none;
+}
+
+.leftpanel {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    justify-content: center;
+    background-image: url(Colton_Twinks.jpg);
+}
+
+.mobiledrawer {
+    display: none;
+}
+
+.mobileorder {
+    background: white;
+}
+
+.mobilegif {
+    display: block;
+    background: white;
+}
+
+.mobiletitle {
+    display: block;
+    border-bottom: black solid 1px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+}
+
+a:link {
+    color: black;
+}
+  
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
 }
