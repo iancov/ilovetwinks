@@ -38,6 +38,23 @@ body {
     font-weight: 400;
 }
 
+.graytext {
+    color: rgb(100, 100, 100);
+}
+
+.pinktext {
+    color: rgb(255, 0, 255);
+    font-style: italic;
+}
+
+.orangetext {
+    color: orange;
+}
+
+.bluetext {
+    color: blue;
+}
+
 .p2 {
     font-family: Arial;
     color: black;
@@ -74,10 +91,12 @@ body {
 }
 
 .top {
-    background: white;
+    background: rgb(255, 255, 255);
     height: 40px;
 
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+    z-index: 1;
 }
 
 .top:hover {
@@ -155,7 +174,7 @@ body {
 }
 
 .leftpanel {
-    background: white;
+    /* background: white; */
     width: 320px;
 
     border-right: 1px solid black;
@@ -163,10 +182,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    z-index: 0;
+}
+
+.tforspace {
+    /* background: turquoise; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 0;
 }
 
 .drawer {
-    /* background: plum; */
+    background: white;;
     height: 40px;
     border-top: 1px solid black;
 
@@ -175,6 +207,8 @@ body {
     padding-left: 10px;
 
     user-select: none;
+
+    z-index: 3;
 }
 
 .drawerhover:hover {
