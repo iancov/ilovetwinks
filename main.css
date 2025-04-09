@@ -358,12 +358,17 @@ body {
     background-image: url(Colton_Twinks.jpg);
 }
 
+.tforspace {
+    display: none;
+}
+
 .mobiledrawer {
     display: none;
 }
 
 .mobileorder {
     background: white;
+    border-bottom: black solid 1px;
 }
 
 .mobilegif {
