@@ -201,6 +201,13 @@ body {
     z-index: 0;
 }
 
+.fillerspace {
+    background: white;
+    width: 100%;
+    height: auto;
+    flex-grow: 2;
+}
+
 .drawer {
     background: white;;
     height: 40px;
@@ -386,6 +393,10 @@ body {
     background: white;
     display: flex;
     align-items: center;
+}
+
+.fillerspace {
+    display: none;
 }
 
 }
