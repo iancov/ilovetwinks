@@ -68,3 +68,7 @@ $( function() {
     $( ".draggable" ).draggable();
       appendTo: ".body"
   } );
+
+function hidethankyou () {
+    document.getElementById("thankyou").style.display = "none";
+}
